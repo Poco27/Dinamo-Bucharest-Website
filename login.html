@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loghin Membri - Acasă</title>
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+    <nav>
+        <a href="dinamo.html">Acasă</a>
+        <a href="news.html">Știri</a>
+        <a href="players.html">Jucători</a>
+        <a href="matches.html">Meciuri</a>
+        <a href="history.html">Istoric</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Loghin</a>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <div class="centered-content">
+                <form id="loginForm" method="POST">
+                    <h2>Loghin Membri</h2>
+                    <p>Pont: user: admin | parola: admin</p>
+                    <label for="username">Nume utilizator:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Parolă:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Loghează-te</button>
+                </form>
+                <div id="welcomeMessage" style="display:none;">
+                    <h1>Welcome!</h1>
+                    <button id="logoutButton" style="width: 90%;">Logout</button>
+                    <div id="contactData"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Dinamo București. Toate drepturile rezervate.</p>
+    </footer>
+    <script src="loghin.js"></script>
+
+</body>
+</html>

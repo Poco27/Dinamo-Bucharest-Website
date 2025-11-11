@@ -1,0 +1,78 @@
+
+        body {
+            font-family: 'Lobster', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url('istoric.jpg'); /* Adaugă imaginea de fundal */
+            background-size: cover; /* Asigură că imaginea de fundal acoperă întreaga pagină */
+            background-position: center; /* Centrează imaginea de fundal */
+            color: #333;
+        }
+
+        header {
+            background-image: linear-gradient(to right, #cc0000, #cc3333);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #c40000;
+            margin-right: 10px;
+        }
+
+        nav a:hover {
+            background-color: #a30000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: justify;
+            margin-top: 50px; /* Adaugă o margine de sus pentru a centra palmaresul */
+        }
+
+        h2 {
+            text-align: center;
+            color: #cc0000;
+            margin-bottom: 20px;
+        }
+
+        .history {
+            margin-bottom: 40px;
+        }
+
+        .trophy-count {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .trophy-count h3 {
+            color: #cc0000;
+            margin: 0;
+        }
+
+        .trophy-count p {
+            margin: 0;
+        }

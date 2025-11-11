@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jucători Dinamo București</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="dinamo.html">Acasă</a>
+            <a href="news.html">Știri</a>
+            <a href="players.html">Jucători</a>
+            <a href="matches.html">Meciuri</a>
+            <a href="history.html">Istoric</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Loghin</a>
+        </nav>
+    </header>
+
+    <section id="portari" style="text-align: left;">
+        <h2>Portari</h2>
+        <div class="player" onclick="showPlayerInfo('portar1')">
+            <img src="Golubovic.jpg" alt="Portar 1">
+            <div class="player-info" id="portar1">Adnan Golubovic</div>
+        </div>
+       
+    </section>
+
+    <section id="fundasi">
+        <h2>Fundași</h2>
+        <div class="player" onclick="showPlayerInfo('fundas1')">
+            <img src="De-Moura.jpg" alt="Fundas 1">
+            <div class="player-info" id="fundas1">Gabriel De Moura</div>
+        </div>
+        <div class="player" onclick="showPlayerInfo('fundas2')">
+            <img src="Homawoo.jpg" alt="Fundas 2">
+            <div class="player-info" id="fundas2">Josue Homawoo</div>
+        </div>
+        <div class="player" onclick="showPlayerInfo('fundas3')">
+            <img src="Bena.jpg" alt="Fundas 3">
+            <div class="player-info" id="fundas3">Quentin Bena</div>
+        </div>
+    </section>
+
+    <section id="mijlocasi">
+        <h2>Mijlocași</h2>
+        <div class="player" onclick="showPlayerInfo('mijlocas1')">
+            <img src="Iglesias.jpg" alt="Mijlocas 1">
+            <div class="player-info" id="mijlocas1">Dani Iglesias</div>
+        </div>
+        <div class="player" onclick="showPlayerInfo('mijlocas2')">
+            <img src="Bani.jpg" alt="Mijlocas 2">
+            <div class="player-info" id="mijlocas2">Ahmed Bani</div>
+        </div>
+        <div class="player" onclick="showPlayerInfo('mijlocas3')">
+            <img src="Rosu.jpg" alt="Mijlocas 3">
+            <div class="player-info" id="mijlocas3">Nelut Rosu</div>
+        </div>
+    </section>
+
+    <section id="atacanti">
+        <h2>Atacanți</h2>
+        <div class="player" onclick="showPlayerInfo('atacant1')">
+            <img src="Politic.jpg" alt="Atacant 1">
+            <div class="player-info" id="atacant1">Denis Politic</div>
+        </div>
+        <div class="player" onclick="showPlayerInfo('atacant2')">
+            <img src="goncalo.jpg" alt="Atacant 2">
+            <div class="player-info" id="atacant2">Goncalo Gregorio</div>
+        </div>
+        <div class="player" onclick="showPlayerInfo('atacant3')">
+            <img src="Abdallah.jpg" alt="Atacant 3">
+            <div class="player-info" id="atacant3">Hakim Abdallah</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Echipa Dinamo București. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script>
+        function showPlayerInfo(playerId) {
+            var playerInfo = document.getElementById(playerId);
+            if (playerInfo.style.opacity === "1") {
+                playerInfo.style.opacity = "0";
+            } else {
+                playerInfo.style.opacity = "1";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+  body {
+            font-family: 'Quicksand', sans-serif; /* Schimbarea fontului */
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #c40000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 20px; /* Spațierea de la partea de sus */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px; /* Spațierea între elemente */
+            border-radius: 5px;
+            background-color: #c40000;
+            margin-right: 10px; /* Spațierea între elemente */
+        }
+
+        nav a:hover {
+            background-color: #a30000; /* Schimbarea culorii la hover */
+        }
+
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            color: #c40000;
+            margin-top: 0;
+        }
+
+        .player {
+            position: relative;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .player img {
+            width: 300px;
+            height: auto;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .player:hover img {
+            transform: scale(1.1);
+        }
+
+        .player .player-info {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            padding: 10px;
+            background-color: rgba(255, 0, 0, 0.7); /* Fundal rosu aproape transparent */
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            color: #fff; /* Text alb */
+            font-size: 24px; /* Mărim dimensiunea textului */
+        }
+
+        .player:hover .player-info {
+            opacity: 1;
+        }
